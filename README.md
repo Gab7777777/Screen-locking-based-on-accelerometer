@@ -1,3 +1,14 @@
+This script is an Android application that locks the screen based on accelerometer data. 
+This script sets up an Android application that utilizes the accelerometer sensor to detect a fall (based on a threshold) and locks the screen if a fall is detected. It also handles requesting device admin permissions if necessary.
+
+NOTE:
+Ensure that the AdminReceiver class is properly implemented and registered in the manifest file.
+
+Add checks to verify if the accelerometer sensor is available before registering it. 
+You can use the getDefaultSensor() method to check if it returns null before registering.
+
+Consider displaying a Toast message when the screen is locked to indicate to the user that the action has been successfully performed.
+
 # Screen-locking-based-on-accelerometer
 
 import android.app.admin.DevicePolicyManager; 
