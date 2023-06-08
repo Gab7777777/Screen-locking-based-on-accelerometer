@@ -11,6 +11,16 @@ Consider displaying a Toast message when the screen is locked to indicate to the
 
 # Screen-locking-based-on-accelerometer
 
+
+
+
+
+
+
+
+
+
+
 import android.app.admin.DevicePolicyManager; 
 import android.content.ComponentName; 
 import android.content.Context; 
