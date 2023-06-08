@@ -11,16 +11,6 @@ Consider displaying a Toast message when the screen is locked to indicate to the
 
 # Screen-locking-based-on-accelerometer
 
-
-
-
-
-
-
-
-
-
-
 import android.app.admin.DevicePolicyManager; 
 import android.content.ComponentName; 
 import android.content.Context; 
@@ -108,11 +98,3 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
-
-
-
-Ensure that the AdminReceiver class is properly implemented and registered in the manifest file.
-
-Add checks to verify if the accelerometer sensor is available before registering it. You can use the getDefaultSensor() method to check if it returns null before registering.
-
-Consider displaying a Toast message when the screen is locked to indicate to the user that the action has been successfully performed.
